@@ -66,47 +66,47 @@ for(int i=0; i<n7; i++)
 
 cout<<"\n TASK:- 8 \n";
 //Suppose an integer array a[5]={1,2,3,4,5}, add more elements to it and display them in C++
- int n = 5, m;
- int p = n; 
-int a[n]={1,2,3,4,5}; //set number of elements in array as a variable
+ int nu = 5, m;
+ int p = nu; 
+int q[nu]={1,2,3,4,5}; //set number of elements in array as a variable
 cout<<"How many more elements do you want to add in the integer array a[5]={1,2,3,4,5}? \n";
 cin>>m; 
-n = m + 5;  //add into that variable so now number of elements has increased
-cout<<"Please enter the elements you want to add in the integer array a[5+n] \n"; 
+nu = m + 5;  //add into that variable so now number of elements has increased
+cout<<"Please enter the elements you want to add in the integer array a[5] \n"; 
 /*despite increase in number of elements and new empty slots, the first 5 elements 
  still remain as {1, 2, 3, 4, 5}*/
-for(int i=p; i<n; i++)
+for(int i=p; i<nu; i++)
 {
 	//we can add the elements of the new positions 
-	cin>>a[i]; 
+	cin>>q[i]; 
 }
     //and display from 0th element to n=n+mth element
-for(int i=0; i<n; i++)
+for(int i=0; i<nu; i++)
 {
-	cout<<a[i]<<' '; 
+	cout<<q[i]<<' '; 
 }
 
 
 cout<<"\n TASK:- 9 \n"; 
 /*Given an integer array and an integer X. Find if there’s a triplet in the array
 which sums up to the given integer X*/
-int n, X;
+int no, X;
 cout<<"Please enter your integer\n"; 
 cin>>X; 
 
 //Inputting desired integer array
 cout<<"How many elements in your integer array? \n"; 
-cin>>n; 
-int c[n]; 
+cin>>no; 
+int c[no]; 
 cout<<"Please enter the elements of your integer array\n"; 
-for(int i=0; i<n; i++)
+for(int i=0; i<no; i++)
 {cin>>c[i];}
 cout<<"The triplets in the array which sum up to "<<X<<" are:- \n";
-for(int i=0; i<n; i++) //loop for first term
+for(int i=0; i<no; i++) //loop for first term
 {
-	for(int j=i+1; j<n; j++) //for 2nd term. j=i+1 (to avoid repitition)
+	for(int j=i+1; j<no; j++) //for 2nd term. j=i+1 (to avoid repitition)
 	{
-		for(int k=j+1; k<n; k++)  //for 3rd term k=j+1 (to avoid repitition)
+		for(int k=j+1; k<no; k++)  //for 3rd term k=j+1 (to avoid repitition)
 		{
 			 /*compares all possible summation combination of triplets 
 			 disregarding repitions*/
